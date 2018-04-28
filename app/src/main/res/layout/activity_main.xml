@@ -11,6 +11,7 @@
         android:layout_height="400dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/poster"
         android:src="@drawable/ic_launcher_background"
         />
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/poster"
         android:text="MovieName"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_margin="7dp"
         android:textSize="22dp"

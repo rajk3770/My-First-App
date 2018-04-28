@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
 
     <TextView
         android:id="@+id/namelabel"
@@ -13,17 +20,32 @@
         android:text="Movie Name"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30dp"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_below="@+id/namelabel"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/poster1"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         android:layout_centerHorizontal="true"
-        android:text="Awesome Movie!"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/namelabel"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
         android:id="@+id/moviedescription"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_below="@+id/poster1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="Awesome Movie!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:padding="8dp" />
+
+
 </RelativeLayout>
+</ScrollView>

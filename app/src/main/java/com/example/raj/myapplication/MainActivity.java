@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
@@ -73,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                     .into(poster);
 
+
                             movieName.setText(movieTitle);
                         }
                         catch(JSONException e){
@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent i = new Intent(MainActivity.this, MovieDescription.class);
         i.putExtra("movieTitle",movieTitle);
         i.putExtra("description",movieDesc);
+        i.putExtra("posteruri", moviePosterUri);
         Log.e("moviedes",movieDesc);
         startActivity(i);
     }
