@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .appendPath("3")
                 .appendPath("discover")
                 .appendPath("movie")
-                .appendQueryParameter("api_key", "9b184480dbdff99fe5b9c7fcb12ba01d")
+                .appendQueryParameter("api_key", "YOUR_API_KEY")
                 .build()
                 .toString();
 
